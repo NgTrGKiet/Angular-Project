@@ -1,7 +1,7 @@
 <app-home></app-home>
 <h3 class="mt-5 mb-3 text-center">Reservation List</h3>
 
-<table class="table table-bordered border-primary">
+<table class="table table-striped">
     <thead>
         <tr>
             <th class="text-center" scope="col">Guest</th>
@@ -30,8 +30,8 @@
                 {{ item.dateRegister.checkOutDate }}
             </td>
             <td class="d-flex justify-content-center">
-                <button class="btn btn-primary me-auto" (click)="deleteReservation(item.id)">Delete</button>
-                <button class=" btn btn-primary ms-auto" [routerLink]="['/edit', item.id]">Update</button>
+                <button class="btn btn-primary mx-2" (click)="deleteReservation(item.id)">Delete</button>
+                <button class=" btn btn-primary mx-2" [routerLink]="['/edit', item.id]">Update</button>
             </td>
         </tr>
     </tbody>
